@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Wear Mask, Stay Safe</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Monsieur+La+Doulaise&family=Special+Elite&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <center>
+                <h2 class="btn btn-primary heading">Wear Mask, Stay Safe
+                </h2>
+                <br>
+              <div class="col-md-4 col-sm-12 col-xs-12">
+                <label>Webcam View - </label>
+                <div id="camera"></div>
+                <br><br>
+                <button onclick="take_snapshot();" class="btn btn-danger">Capture Image</button>
+              </div>
+              <div class="col-md-4 col-sm-12 col-xs-12">
+                <label>Prediction 1 - </label>
+              <p class="emoji_name" id="result_emotion_name"></p>
+              <p class="emoji" id="update_emoji"></p>
+              
+              <label> </label>
+              <p class="emotion_name" id="result_emotion_name2"></p>
+              <p class="emoji" id="update_emoji2"></p>
+      
+             </div>
+             <div class="col-md-4 col-sm-12 col-xs-12">
+                <label>Snapshot - </label>
+              <div id="result"></div>
+              <br><br>
+              <button onclick="check();" class="btn btn-success">Identify</button>
+             </div>
+      
+            </center>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
